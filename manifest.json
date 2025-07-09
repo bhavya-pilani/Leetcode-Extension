@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Leetcode Hint",
+  "version": "1.0",
+  "description": "Get AI-generated hints on Leetcode problems",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://leetcode.com/problems/*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+.leetcode-hint-box {
+  position: fixed;
+  top: 100px;
+  right: 30px;
+  background-color: #f9fafb;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  padding: 16px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  z-index: 9999;
+  cursor: grab;
+  display: none;
+}
+
+.hint-toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 20px;
+  font-weight: bold;
+  font-family: "Segoe UI", sans-serif;
+  cursor: pointer;
+  z-index: 10000;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hint-toggle-btn:hover {
+  background-color: #4f46e5;
+}
+
+.hint-text {
+  color: #111827;
+  line-height: 1.5;
+}
+
+@media (prefers-color-scheme: dark) {
+  .leetcode-hint-box {
+    background-color: #1e293b;
+    color: #f1f5f9;
+    border: 1px solid #334155;
+  }
+
+  .hint-text {
+    color: #e2e8f0;
+  }
+
+  .hint-toggle-btn {
+    background-color: #7c3aed;
+  }
+
+  .hint-toggle-btn:hover {
+    background-color: #6d28d9;
+  }
+}
+.next-hint-btn {
+  margin-top: 16px;
+  padding: 10px 18px;
+  background-color: #6366f1; /* calmer indigo */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Segoe UI", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.next-hint-btn:hover {
+  background-color: #4f46e5;
+  transform: translateY(-1px);
+}
+
+.next-hint-btn:active {
+  transform: translateY(1px);
+}
